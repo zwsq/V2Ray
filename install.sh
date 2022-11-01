@@ -2,10 +2,11 @@
 
 #====================================================
 #	System Request:Debian 9+/Ubuntu 18.04+/Centos 7+
-#	Author:	wulabing
+#	Chinese Author:	wulabing
+#   English Author: ZWSQ
 #	Dscription: V2ray ws+tls onekey Management
 #	Version: 1.0
-#	email:admin@wulabing.com
+#	email:abolemail@gmail.com
 #	Official document: www.v2ray.com
 #====================================================
 
@@ -438,7 +439,7 @@ ssl_install() {
 }
 
 domain_check() {
-    read -rp "请输入你的域名信息(eg:www.wulabing.com):" domain
+    read -rp "请输入你的域名信息(eg:www.zwsq.com):" domain
     domain_ip=$(curl -sm8 https://ipget.net/?ip="${domain}")
     echo -e "${OK} ${GreenBG} 正在获取 公网ip 信息，请耐心等待 ${Font}"
     wgcfv4_status=$(curl -s4m8 https://www.cloudflare.com/cdn-cgi/trace -k | grep warp | cut -d= -f2)
