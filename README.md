@@ -29,6 +29,11 @@ Install V2Ray server using following command.
 bash <(curl -L -s https://raw.githubusercontent.com/zwsq/V2Ray/main/install.sh) | tee v2ray_ins.log
 ```
 Select Option 1 to install V2Ray on your server and continue the installation. The script is written by [Vulabing](https://github.com/wulabing) but it language is Chinese. I tried to translate some parts of it to English for better understanding.
+### Client
+1. Download the latest version of V2Ray Core for your OS from [Here](https://github.com/v2fly/v2ray-core/releases/) and extract it on your system.
+2. Copy your server's information including server name, port, UUID and WS Path and paste it on config.json file. You can also use sample config files in config directory. It is recommended to rename them to config.json.
+3. Start V2Ray and enjoy it.
+
 ## License
 
 MIT
