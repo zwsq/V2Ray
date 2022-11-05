@@ -1,0 +1,43 @@
+{
+  "inbounds": [
+    {
+      "port": 443,
+      "listen": "0.0.0.0",
+      "protocol": "shadowsocks",
+      "level": 0,
+      "ota": false,
+      "network": "tcp",
+      "settings": {
+        "method": "aes-256-gcm",
+        "password": "abcdefpass",
+        "udp": false
+      }
+    }
+  ],
+
+  "outbounds": [
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "server.zwsq.ir",
+            "port": 443,
+            "users": [
+              {
+                "id": "74bc5ae2-a3fd-966l-827d-0fc8f8717601"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/16834e46/"
+        }
+      }
+    }
+  ]
+}
